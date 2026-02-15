@@ -36,7 +36,10 @@ add_library(simple-2d-constraint-solver STATIC
     src/utilities.cpp
     src/ode_solver.cpp
     src/euler_ode_solver.cpp
+    src/Improved_Euler_ode_solver.cpp
     src/rk4_ode_solver.cpp
+    src/rk5_ode_solver.cpp
+    src/rk6_ode_solver.cpp
     src/constraint.cpp
     src/force_generator.cpp
     src/rigid_body.cpp
@@ -69,7 +72,10 @@ add_library(simple-2d-constraint-solver STATIC
     include/system_state.h
     include/ode_solver.h
     include/euler_ode_solver.h
+    include/Improved_Euler_ode_solver.h
     include/rk4_ode_solver.h
+    include/rk5_ode_solver.h
+    include/rk6_ode_solver.h
     include/constraint.h
     include/force_generator.h
     include/rigid_body.h
@@ -106,6 +112,7 @@ add_executable(simple-2d-constraint-solver-test
     test/matrix_tests.cpp
     test/euler_ode_solver_tests.cpp
     test/rk4_ode_solver_tests.cpp
+    test/rk6_ode_solver_tests.cpp
     test/gauss_seidel_sle_solver_tests.cpp
     test/gaussian_elimination_sle_solver_tests.cpp
     test/rolling_constraint_tests.cpp

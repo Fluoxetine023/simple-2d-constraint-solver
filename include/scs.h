@@ -5,7 +5,10 @@
 #include "optimized_nsv_rigid_body_system.h"
 
 #include "euler_ode_solver.h"
+#include "improved_euler_ode_solver.h"
 #include "rk4_ode_solver.h"
+#include "rk6_ode_solver.h"
+#include "rk5_ode_solver.h"
 #include "nsv_ode_solver.h"
 
 #include "gauss_seidel_sle_solver.h"
